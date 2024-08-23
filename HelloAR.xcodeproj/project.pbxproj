@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2AC63702C783D4800FF0C2C /* HelloWorldARContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AC636F2C783D4800FF0C2C /* HelloWorldARContainer.swift */; };
+		F2AC63722C7853C800FF0C2C /* MeasureARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AC63712C7853C800FF0C2C /* MeasureARViewContainer.swift */; };
 		F2C560EC2C7831CE006172BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C560EB2C7831CE006172BC /* AppDelegate.swift */; };
 		F2C560EE2C7831CE006172BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C560ED2C7831CE006172BC /* ContentView.swift */; };
 		F2C560F02C7831CF006172BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C560EF2C7831CF006172BC /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2AC636F2C783D4800FF0C2C /* HelloWorldARContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldARContainer.swift; sourceTree = "<group>"; };
+		F2AC63712C7853C800FF0C2C /* MeasureARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureARViewContainer.swift; sourceTree = "<group>"; };
 		F2C560E82C7831CE006172BC /* HelloAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C560EB2C7831CE006172BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2C560ED2C7831CE006172BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				F2C560EB2C7831CE006172BC /* AppDelegate.swift */,
 				F2C560ED2C7831CE006172BC /* ContentView.swift */,
+				F2AC636F2C783D4800FF0C2C /* HelloWorldARContainer.swift */,
+				F2AC63712C7853C800FF0C2C /* MeasureARViewContainer.swift */,
 				F2C560EF2C7831CF006172BC /* Assets.xcassets */,
 				F2C560F12C7831CF006172BC /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2AC63702C783D4800FF0C2C /* HelloWorldARContainer.swift in Sources */,
 				F2C560EE2C7831CE006172BC /* ContentView.swift in Sources */,
+				F2AC63722C7853C800FF0C2C /* MeasureARViewContainer.swift in Sources */,
 				F2C560EC2C7831CE006172BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
