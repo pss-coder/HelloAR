@@ -17,7 +17,6 @@ struct MeasureARViewContainer: UIViewRepresentable {
         return MeasureCoordinator()
     }
     
-    
     func makeUIView(context: Context) -> some UIView {
         
         //create AR view
@@ -37,10 +36,7 @@ struct MeasureARViewContainer: UIViewRepresentable {
         
         // add coaching overlay for instructions
         arView.addCoachingOverlay()
-        
-        
-        
-        
+
         return arView
     }
     
@@ -67,7 +63,6 @@ class MeasureCoordinator: NSObject {
 
         return btn
     }()
-    
     lazy var resetButton: UIButton = {
         let btn = UIButton(configuration: .gray(), primaryAction: UIAction(handler: { [weak self] action in
             guard let arView = self?.view else { return }
@@ -109,7 +104,7 @@ class MeasureCoordinator: NSObject {
 
     }
     
-    
+	
     @objc
     func handleTap(_ recogniser: UITapGestureRecognizer) {
         
@@ -151,7 +146,6 @@ class MeasureCoordinator: NSObject {
                 
                 
                 // draw line between the 2 points
-                
                 let rectangle = ModelEntity(mesh: .generateBox(width: 0.003, height: 0.003, depth: distance), materials: [SimpleMaterial(color: .blue, isMetallic: false)])
                 
                 // Middle point of the two points
@@ -167,20 +161,14 @@ class MeasureCoordinator: NSObject {
                 lineAnchor.addChild(rectangle)
                 view.scene.addAnchor(lineAnchor)
 
-                
-                
-               
-                
                 // Update UI
                 measurementButton.setTitle(String(format: "%.2f m", distance), for: .normal)
-                
-                
-            }
-        }
+				
+            } // end else
+        } // end if let
     }
     
     func calculateDistanceBetween(start: AnchorEntity, end: AnchorEntity) -> Float {
-        
         // get point distance
         let startPoint = startAnchor!.position(relativeTo: nil)
         let endPoint = endAnchor!.position(relativeTo: nil)
@@ -209,6 +197,8 @@ class MeasureCoordinator: NSObject {
 
 //MARK: Extension for ARView
 extension ARView {
+	
+	// instruction overlay
     func addCoachingOverlay() {
         let coachingView = ARCoachingOverlayView()
         

@@ -10,15 +10,18 @@ import RealityKit
 
 struct ContentView : View {
     var body: some View {
-        VStack(content: {
-            Text("Hello AR")
+        ZStack(alignment: .bottom) {
             MeasureARViewContainer().edgesIgnoringSafeArea(.all)
                 .border(.black)
-                .padding()
-        })
-        
+//            VStack(alignment: .center, content: {
+//                Text("Hello")
+//                    .background(.white)
+//            })
+        }
     }
 }
+
+
 
 #Preview {
     ContentView()
